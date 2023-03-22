@@ -15,5 +15,4 @@ public class Main
         } else {
             System.out.printf("A idade é menor que 18");
         }
-	}
 }
