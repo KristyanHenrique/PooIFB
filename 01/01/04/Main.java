@@ -13,6 +13,6 @@ public class Main
         }
         
         Collections.sort(listaInts);
-        System.out.printf("%d %d",listaInts.get(0),listaInts.get(1));
+        System.out.printf("%d %d \n",listaInts.get(0),listaInts.get(1));
 	}
 }
