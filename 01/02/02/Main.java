@@ -22,7 +22,5 @@ public class Main {
             }
         }
         System.out.printf("Numeros impares: %d \nNumeros pares: %d \n",negativos,positivos);
-
-        
     }
 }
