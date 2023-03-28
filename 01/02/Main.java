@@ -1,7 +1,10 @@
-import java.util.*;
+//1) Imprimir todos os valores inteiros entre 100 (inclusive) e 120 (inclusive). 
 
+import java.util.*;
 public class Main{
     public static void main(String args[]){
-        System.out.printf("Teste");
+        for(int i = 100; i<=120; i++){
+            System.out.printf("%d\n",i);
+        }
     }
 }
