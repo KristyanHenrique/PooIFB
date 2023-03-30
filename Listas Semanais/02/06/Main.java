@@ -1,4 +1,4 @@
-// 2 Ler 10 valores e escrever quantos desses valores lidos são NEGATIVOS e quantos são POSITIVOS. 
+// 6) Ler 10 números e imprimir quantos são pares e quantos são ímpares.
 
 import java.util.*;
 
@@ -12,15 +12,15 @@ public class Main {
         for (int i=0;i<10 ;i++ ) {
             listaInts.add(scan.nextInt());
         }
-        int positivos = 0;
-        int negativos = 0;
+        int par = 0;
+        int impar = 0;
         for (int i=0; i<10 ;i++ ) {
-            if (listaInts.get(i) > 0) {
-                positivos++;
+            if (listaInts.get(i) % 2 == 0) {
+                par++;
             }else{
-                negativos++;
+                impar++;
             }
         }
-        System.out.printf("Numeros negativos: %d \nNumeros positivos: %d \n",negativos,positivos);
+        System.out.printf("Numeros impares: %d \nNumeros pares: %d \n",impar,par);
     }
 }
