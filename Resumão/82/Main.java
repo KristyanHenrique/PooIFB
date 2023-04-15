@@ -7,18 +7,36 @@ public class Main
 {
 	public static void main(String[] args) {
         Random gerador = new Random();
-        int v1[] = new int[50];
-        
+        int vet[] = new int[50];
+        int posicoes[] = new int[50];
+        int count = 0;
 
         for (int i = 0; i<50 ; i++){
-            v1[i] = gerador.nextInt(100);
+            vet[i] = gerador.nextInt(100);
         }
 
         for (int i = 0; i<50 ; i++){
-            System.out.printf("%d | %d\n",i,v1[i]);
+            System.out.printf("%d | %d\n",i,vet[i]);
         }
 
-        for
+        for (int i = 0; i < 50; i++) {
+            for (int j = i + 1; j < 50; j++) {
+                if (vet[i] == vet[j]) {
+                    posicoes[count] = i;
+                    posicoes[count + 1] = j;
+                    count += 2;
+                } 
+            }
+        }
 
+        if (count > 0) {
+            System.out.print("Os números repetidos estão nas posições: ");
+            for (int i = 0; i < count; i++) {
+                System.out.print(posicoes[i] + " ");
+            }
+            System.out.printf(" \n");
+        } else {
+            System.out.print("Não há números repetidos.");
+        }
     }
 }
