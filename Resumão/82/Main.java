@@ -30,13 +30,13 @@ public class Main
         }
 
         if (count > 0) {
-            System.out.print("Os números repetidos estão nas posições: ");
+            System.out.print("Os números repetidos são: ");
             for (int i = 0; i < count; i++) {
                 System.out.print(posicoes[i] + " ");
             }
-            System.out.printf(" \n");
+            System.out.printf("\n");
         } else {
-            System.out.print("Não há números repetidos.");
+            System.out.print("Não há números repetidos.\n");
         }
     }
 }
