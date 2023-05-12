@@ -13,7 +13,7 @@ public class Main
         System.out.printf("Insira o valor\n");
 		float g1 = sc.nextFloat();
         
-        if(t1.equals('A')){
+        if(t1=='A'){
             g1= g1*2.9;
         }else{
             g1= g1*3.3;
