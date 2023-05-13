@@ -1,20 +1,18 @@
-45) Modifique o exercício anterior para aceitar somente valores maiores que 0 para N. Caso o valor
-informado (para N) não seja maior que 0, deverá ser lido um novo valor para N.
-
+// 44) Ler um valor N e imprimir todos os valores inteiros entre 1 (inclusive) e N (inclusive). Considere
+// que o N será sempre maior que ZERO.
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n;
+        Scanner scan = new Scanner(System.in);
 
-        do {
-            System.out.print("Digite um valor inteiro maior que zero: ");
-            n = sc.nextInt();
-        } while (n <= 0);
+        System.out.print("Digite um valor inteiro N: ");
+        int n = scan.nextInt();
 
         for (int i = 1; i <= n; i++) {
-            System.out.println(i);
+            System.out.print(i + " ");
         }
+
     }
 }
+
