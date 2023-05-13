@@ -1,24 +1,32 @@
-// 28) Escreva um algoritmo que leia o número de litros vendidos e o tipo de combustível (codificado
-// da seguinte forma: A-álcool, G-gasolina), calcule e imprima o valor a ser pago pelo cliente
-// sabendo-se que o preço do litro da gasolina é R$ 3,30 e o preço do litro do álcool é R$ 2,90
+// 31) Faça um algoritmo para ler um número que é um código de usuário. Caso este código seja
+// diferente de um código armazenado internamente no algoritmo (igual a 1234) deve ser apresentada a
+// mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve ser apresentado outro valor que é a
+// senha. Se esta senha estiver incorreta (a certa é 9999) deve ser mostrada a mensagem ‘senha
+// incorreta’. Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
 
 import java.util.*;
 
-public class Main
-{
-	public static void main(String[] args) {
-		Scanner sc =  new Scanner(System.in);
-		System.out.printf("insira o codigo do produto\n");
-		char t1 = sc.next();
-        System.out.printf("Insira o valor\n");
-		float g1 = sc.nextFloat();
+public class Main {
+
+    public static void main(String[] args) {
         
-        if(t1=='A'){
-            g1= g1*2.9;
-        }else{
-            g1= g1*3.3;
+        Scanner scan = new Scanner(System.in);
+        int codigo_usuario, senha;
+        
+        System.out.print("Digite o código de usuário: ");
+        codigo_usuario = scan.nextInt();
+        
+        if (codigo_usuario == 1234) {
+            System.out.print("Digite a senha: ");
+            senha = scan.nextInt();
+            
+            if (senha == 9999) {
+                System.out.println("Acesso permitido");
+            } else {
+                System.out.println("Senha incorreta");
+            }
+        } else {
+            System.out.println("Usuário inválido!");
         }
-        System.out.printf("%.2f é o valor\n",g1);
-        
-	}
+    }
 }

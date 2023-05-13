@@ -1,14 +1,9 @@
-// 43) Escreva um algoritmo para imprimir os 10 primeiros números inteiros maiores que 100.
+// 42) Escreva um algoritmo para imprimir os números de 1 (inclusive) a 10 (inclusive) em ordem
+// decrescente
 public class Main {
-    public static void main(String[] args) {
-      int numero = 101;
-      int cont = 0;
-  
-      while (cont < 10) {
-        System.out.println(numero);
-        numero++;
-        cont++;
-      }
+  public static void main(String[] args) {
+    for (int i = 10; i >= 1; i--) {
+      System.out.println(i);
     }
   }
-  
+}

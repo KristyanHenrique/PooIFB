@@ -1,4 +1,5 @@
-//2) Escreva uma algoritmo que receba uma hora no formato de três números inteiros que representam: horas, minutos e segundos. Sua função deve calcular e retornar a quantidade total de segundos.
+//2) Escreva uma algoritmo que receba uma hora no formato de três números inteiros que representam: horas, minutos e segundos. Sua função deve calcular 
+// e retornar a quantidade total de segundos.
 
 import java.util.*;
 

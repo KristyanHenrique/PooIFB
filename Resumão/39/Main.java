@@ -1,8 +1,8 @@
-39) Escreva um algoritmo para ler as notas da 1
-a e 2
-a avaliações de um aluno, calcule e imprima a
-média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada
-nota.
+// 39) Escreva um algoritmo para ler as notas da 1
+// a e 2
+// a avaliações de um aluno, calcule e imprima a
+// média (simples) desse aluno. Só devem ser aceitos valores válidos durante a leitura (0 a 10) para cada
+// nota.
 
 
 import java.util.Scanner;
